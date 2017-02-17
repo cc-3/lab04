@@ -45,7 +45,7 @@ main:
     str x30, [SP]         // guardamos x30 para poder llamar a funciones
     mov x1, #2 // Cargamos el numero 2
     mov x2, #2 // Cargamos el numero 2
-    bl add // mandamos a llamar a add
+    bl sumar // mandamos a llamar a add
     b exit
 
 exit:
