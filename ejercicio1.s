@@ -43,8 +43,8 @@ sra:
 main:
     add SP, SP, #-16
     str x30, [SP]         // guardamos x30 para poder llamar a funciones
+    mov x0, #2 // Cargamos el numero 2
     mov x1, #2 // Cargamos el numero 2
-    mov x2, #2 // Cargamos el numero 2
     bl sumar // mandamos a llamar a add
     b exit
 
